@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Classroom Video Results</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#4b0000,#1a1a1a);
+margin:0;
+padding:0;
+color:white;
+}
+
+.header{
+background:rgba(0,0,0,0.7);
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+margin-top:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:12px;
+backdrop-filter: blur(8px);
+box-shadow:0px 4px 20px rgba(0,0,0,0.5);
+margin-bottom:25px;
+}
+
+h2{
+margin-top:0;
+}
+
+.video-box{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+video{
+width:100%;
+max-width:800px;
+border-radius:10px;
+}
+
+.analytics{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.stat{
+flex:1;
+min-width:200px;
+background:rgba(255,255,255,0.08);
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:12px;
+text-align:left;
+border-bottom:1px solid rgba(255,255,255,0.15);
+}
+
+th{
+background:rgba(255,255,255,0.08);
+}
+
+.attention-bar{
+height:12px;
+border-radius:6px;
+background:rgba(255,255,255,0.2);
+overflow:hidden;
+}
+
+.bar-fill{
+height:100%;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+}
+
+@media(max-width:768px){
+.analytics{
+flex-direction:column;
+}
+video{
+max-width:100%;
+}
+table{
+font-size:14px;
+}
+.header{
+font-size:20px;
+}
+}
+
+@media(max-width:480px){
+.card{
+padding:15px;
+}
+h2{
+font-size:18px;
+}
+table{
+font-size:13px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Smart Classroom Video Analysis Results
+</div>
+
+<div class="container">
+
+<!-- VIDEO RESULT -->
+<div class="card">
+<h2>Uploaded Classroom Video</h2>
+<div class="video-box">
+<video controls>
+<source src="" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- CLASS ANALYTICS -->
+<div class="card">
+<h2>Class Analytics</h2>
+<div class="analytics">
+
+<div class="stat">
+<h3>Class Attention Index</h3>
+<p>-</p>
+</div>
+
+<div class="stat">
+<h3>Class Mood</h3>
+<p>-</p>
+</div>
+
+<div class="stat">
+<h3>Top Performer</h3>
+<p>-</p>
+</div>
+
+</div>
+</div>
+
+<!-- STUDENT REPORT -->
+<div class="card">
+<h2>Student Attention Report</h2>
+<table>
+<tr>
+<th>Roll</th>
+<th>Name</th>
+<th>Attention Score</th>
+<th>Visualization</th>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>
+<div class="attention-bar">
+<div class="bar-fill" style="width:0%"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>
+<div class="attention-bar">
+<div class="bar-fill" style="width:0%"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>
+<div class="attention-bar">
+<div class="bar-fill" style="width:0%"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>
+<div class="attention-bar">
+<div class="bar-fill" style="width:0%"></div>
+</div>
+</td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+</body>
+</html>

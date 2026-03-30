@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Analytics</title>
+
+<style>
+
+/* SAME SMOOTH GRADIENT */
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+background: linear-gradient(
+135deg,
+#4b0000 0%,
+#3a0b0b 25%,
+#2b1616 50%,
+#1f1f1f 75%,
+#1a1a1a 100%
+);
+min-height:100vh;
+}
+
+/* HEADER */
+.header{
+background:rgba(0,0,0,0.7);
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+margin-top:50px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:16px;
+backdrop-filter: blur(8px);
+box-shadow:0px 4px 25px rgba(0,0,0,0.5);
+margin-bottom:30px;
+}
+
+/* TITLE */
+h2{
+margin-top:0;
+margin-bottom:20px;
+}
+
+/* SESSION INFO */
+.session-info{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.session-box{
+flex:1;
+min-width:200px;
+background:rgba(0,0,0,0.35);
+padding:18px;
+border-radius:12px;
+}
+
+.session-title{
+font-size:14px;
+color:#ccc;
+margin-bottom:6px;
+}
+
+.session-value{
+font-size:20px;
+font-weight:bold;
+}
+
+/* CLASS ANALYTICS */
+.analytics-grid{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.analytics-box{
+flex:1;
+min-width:200px;
+background:rgba(0,0,0,0.35);
+padding:20px;
+border-radius:12px;
+text-align:center;
+}
+
+.analytics-title{
+font-size:14px;
+color:#ccc;
+margin-bottom:8px;
+}
+
+.analytics-value{
+font-size:26px;
+font-weight:bold;
+}
+
+/* ATTENTION BAR */
+.bar{
+height:12px;
+background:rgba(255,255,255,0.15);
+border-radius:6px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+}
+
+/* BUTTON */
+.next-btn{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:8px;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.next-btn:hover{
+transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.card{
+padding:22px;
+}
+
+.analytics-grid{
+flex-direction:column;
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+width:92%;
+margin-top:30px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Smart Classroom Video Analytics
+</div>
+
+<div class="container">
+
+<!-- SESSION DETAILS -->
+
+<div class="card">
+
+<h2>Session Details</h2>
+
+<div class="session-info">
+
+<div class="session-box">
+<div class="session-title">Session Date</div>
+<div class="session-value">-</div>
+</div>
+
+<div class="session-box">
+<div class="session-title">Video Duration</div>
+<div class="session-value">-</div>
+</div>
+
+<div class="session-box">
+<div class="session-title">Students Detected</div>
+<div class="session-value">-</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- CLASS ATTENTION ANALYTICS -->
+
+<div class="card">
+
+<h2>Class Attention Analytics</h2>
+
+<div class="analytics-grid">
+
+<div class="analytics-box">
+<div class="analytics-title">Average Attention Score</div>
+<div class="analytics-value">-</div>
+</div>
+
+<div class="analytics-box">
+<div class="analytics-title">Class Attention Level</div>
+<div class="analytics-value">-</div>
+</div>
+
+<div class="analytics-box">
+<div class="analytics-title">Top Performer</div>
+<div class="analytics-value">-</div>
+</div>
+
+</div>
+
+<div class="bar">
+<div class="fill" style="width:0%"></div>
+</div>
+
+</div>
+
+<!-- NAVIGATION -->
+
+<div class="card" style="text-align:center;">
+
+<h2>Continue</h2>
+
+<button class="next-btn">View Student Report</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

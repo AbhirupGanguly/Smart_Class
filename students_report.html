@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Attention Report</title>
+
+<style>
+
+/* SAME SMOOTH GRADIENT */
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+background: linear-gradient(
+135deg,
+#4b0000 0%,
+#3a0b0b 25%,
+#2b1616 50%,
+#1f1f1f 75%,
+#1a1a1a 100%
+);
+min-height:100vh;
+}
+
+/* HEADER */
+.header{
+background:rgba(0,0,0,0.7);
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+margin-top:50px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:16px;
+backdrop-filter: blur(8px);
+box-shadow:0px 4px 25px rgba(0,0,0,0.5);
+margin-bottom:30px;
+}
+
+/* TITLE */
+h2{
+margin-top:0;
+margin-bottom:20px;
+}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th, td{
+padding:14px;
+text-align:left;
+border-bottom:1px solid rgba(255,255,255,0.15);
+}
+
+th{
+color:#2ecc71;
+}
+
+tr:hover{
+background:rgba(255,255,255,0.05);
+}
+
+/* ATTENTION BAR */
+.bar{
+height:10px;
+background:rgba(255,255,255,0.15);
+border-radius:6px;
+overflow:hidden;
+margin-top:6px;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+}
+
+/* STATE COLORS */
+.active{
+color:#2ecc71;
+font-weight:bold;
+}
+
+.focused{
+color:#f1c40f;
+font-weight:bold;
+}
+
+.distracted{
+color:#e74c3c;
+font-weight:bold;
+}
+
+/* BUTTON */
+.next-btn{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:8px;
+background:linear-gradient(90deg,#2ecc71,#27ae60);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.next-btn:hover{
+transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.card{
+padding:22px;
+}
+
+th, td{
+font-size:14px;
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+width:92%;
+margin-top:30px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Student Attention Report
+</div>
+
+<div class="container">
+
+<!-- STUDENT REPORT TABLE -->
+
+<div class="card">
+
+<h2>Detailed Student Attention Report</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Roll</th>
+<th>Student Name</th>
+<th>Attention Score</th>
+<th>Attention State</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>
+-
+<div class="bar"><div class="fill" style="width:0%"></div></div>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>
+-
+<div class="bar"><div class="fill" style="width:0%"></div></div>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>
+-
+<div class="bar"><div class="fill" style="width:0%"></div></div>
+</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>-</td>
+<td>
+-
+<div class="bar"><div class="fill" style="width:0%"></div></div>
+</td>
+<td>-</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- CONTINUE BUTTON -->
+
+<div class="card" style="text-align:center;">
+
+<h2>Continue</h2>
+
+<button class="next-btn">View Video Result</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

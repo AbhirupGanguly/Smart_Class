@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Classroom System</title>
+
+<style>
+
+/* SAME GRADIENT AS ALL PAGES */
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+background: linear-gradient(
+135deg,
+#4b0000 0%,
+#3a0b0b 25%,
+#2b1616 50%,
+#1f1f1f 75%,
+#1a1a1a 100%
+);
+min-height:100vh;
+}
+
+/* HEADER */
+.header{
+background:rgba(0,0,0,0.7);
+padding:22px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+margin-top:60px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:16px;
+backdrop-filter: blur(8px);
+box-shadow:0px 4px 25px rgba(0,0,0,0.5);
+text-align:center;
+}
+
+/* TITLE */
+h2{
+margin-top:0;
+margin-bottom:25px;
+}
+
+/* BUTTONS GRID */
+.btn-grid{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+/* DARK MAROON → GREY BUTTON STYLE */
+.page-btn{
+padding:15px 30px;
+border:none;
+border-radius:10px;
+background:linear-gradient(90deg,#4b0000,#2b1616,#1a1a1a);
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+min-width:200px;
+}
+
+.page-btn:hover{
+transform:scale(1.05);
+background:linear-gradient(90deg,#5c0000,#321a1a,#222222);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.card{
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 25px rgba(0,0,0,0.5);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;   /* 🔥 vertical spacing (top-bottom between rows) */
+}
+
+.page-btn{
+width:100%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+Smart Classroom System
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<div class="btn-grid">
+    <button class="page-btn" onclick="location.href='dashboard.html'">Dashboard</button>
+    <button class="page-btn" onclick="location.href='upload_video.html'">Upload Video</button>
+    <button class="page-btn" onclick="location.href='analytics.html'">Video Analytics</button>
+    <button class="page-btn" onclick="location.href='students_report.html'">Student Report</button>
+    <button class="page-btn" onclick="location.href='video_result.html'">Video Result</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
